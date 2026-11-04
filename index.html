@@ -1,126 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-        <title>Kayode Beulah | Web Developer</title>
-        <!-- Link to the external CSS file -->
-  <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Kayode Beulah</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayode Beulah | Web Developer</title>
+    
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Kayode Beulah</a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        </nav>        
-        </header>
-        <main>
-            <section id="about">
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <img src="./headshot.jpg" alt="Kayode Beulah" class="profile-img">
+            <div class="about-content">
                 <h2>About Me</h2>
-                <img src="./headshot.jpg" alt="Kayode Beulah" width="200"/>
-                <p>Hi, I'm Kayode—an aspiring web developer taking my first bold steps into the world of software development.
-                I’m currently building a strong foundation in core web technologies like HTML5 and CSS, bringing designs to life using VS Code.</p>
-                <br>
-                <p>My approach goes beyond just writing markup; I view web development through the lens of the full Software Development Life Cycle (SDLC)—from initial planning and design, through building and testing, to eventual deployment and maintenance.</p>
-                <br>
-                <p>At my core, I am driven by problem-solving. I enjoy breaking down complex challenges into clean, structured code and creating user-friendly web experiences. Every project is an opportunity to learn, iterate, and sharpen my craft as I grow into a full-fledged developer.</p>
-            </section>
-            <section id="skills">
-                <h2>My Skills</h2>
-                <ul>
-                    <li>AI Automation & Integration
-                        <ul><li>Leveraging intelligent automation to streamline complex workflows, reduce repetitive tasks, and scale efficiency. I build smart systems using AI tools, API connections, and process automation to solve real-world operational bottlenecks and transform raw data into actionable outcomes.</li></ul>
-                    </li>
-                    <li>Website & Landing Page Development
-                        <ul><li>Designing and building responsive, high-converting landing pages that blend clean frontend code with strategic user journeys. I create pages that engage visitors, capture leads, and guide them seamlessly to action.</li></ul>
-                    </li>
-                    <li>HTML5 & CSS3
-                        <ul>
-                            <li>Translating concepts and wireframes into clean, semantic, and responsive web pages. I focus on writing accessible HTML5 markup and modern, styled CSS layouts that deliver intuitive, visually engaging user experiences across all screen sizes.</li>
-                        </ul>
-                    </li>
-                    <li>Technical Problem Solving
-                        <ul><li>Combining analytical thinking with programmatic logic to debug issues, refine user experiences, and bridge the gap between automated backend systems and client-facing web interfaces. I thrive on breaking big problems down into modular, solvable pieces.</li></ul>
-                    </li>
-                    <li>VS Code - Development & Environment Optimization
-                        <ul>
-                            <li>Utilizing Visual Studio Code as a central command hub for efficient development. By configuring specialized extensions, automated linting, live servers, and keyboard shortcuts, I maintain a fast, error-free workflow from the first line of code to final deployment.</li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </section>
-            <section id="portfolio">
-                <h2>My Portfolio</h2>
-                <ol>
-                    <li>The Poultry Farm Intelligence
-                        <ul>
-                            <li>An AI sales analyst for a poultry business that runs every evening at 7 PM. It pulls the day’s orders from Google Sheets and calculates revenue, units sold, top products, top sales channels and peak sales hours. GPT-4o then turns those numbers into a business report covering finances, best sellers, hidden problems, growth opportunities and next steps. The report goes to the owner by Gmail. It is built to use only the sales data, so the AI doesn’t invent figures. <p><b>Stack:</b> n8n, Google Sheets, JavaScript, OpenAI GPT-4o, Gmail</p></li>
-                        </ul>
-                    </li>
-                    <br>
-                    <nav>
-                        <img src="./the_poultry_farm_intelligence.png" alt="The Poultry Farm Intelligence" width="680"/>
+                <p>Hi, I'm Kayode—an aspiring web developer taking my first bold steps into software development. I’m currently building a strong foundation in core web technologies like HTML5 and CSS, bringing designs to life using VS Code.</p>
+                <p>My approach goes beyond writing markup; I view web development through the lens of the full Software Development Life Cycle (SDLC)—from planning and design to deployment and maintenance.</p>
+                <p>Driven by problem-solving, I enjoy breaking down complex challenges into clean, structured code to create user-friendly web experiences.</p>
+            </div>
+        </section>
 
-                    </nav>
-                    <br>
-                    <li>Lead Routing & Sales Process
-                        <ul>
-                            <li>A lead-intake system that catches new leads through a webhook. It cleans each lead’s details and logs them in Google Sheets. It then reads the service the lead wants and alerts the matching sales team in Slack: Automation, Web & Software, Training & Consulting, or Customer Experience. Leads reach the right team right away, with no manual sorting.<p><b>Stack:</b> n8n, Webhooks, Google Sheets, Slack</p></li>
-                        </ul>
-                    </li>
-                    <br>
-                    <nav>
-                        <img src="./lead-routing_sales_process.png" alt="Lead Routing & Sales Process" width="680"/>
-                    </nav>
-                    <li>Customer Support Request Process
-                        <ul>
-                            <li>A support-ticket router that takes customer requests through a webhook and logs every ticket in Google Sheets. It sorts each request by type and sends it to the right Slack team: Delivery, Product Support, Returns & Refunds, Billing, or Customer Care. Customers get faster replies, and every ticket is on record.<p><b>Stack:</b> n8n, Webhooks, Google Sheets, Slack</p></li>
-                        </ul>
-                    </li>
-                    <br>
-                    <nav>
-                        <img src="./customer_support_request_process.png" alt="Customer Support Request Process" width="680"/>
-                    </nav>
-                    <li>PIIT Week1 Project- Personal Profile
-                        <ul><li>A high-converting landing page that blend clean frontend code with strategic user journey. I created sections that engage visitors, capture leads, and guide them seamlessly to action.<p><b>Stack:</b> VScode, HTML5, CSS, Favicon, Github</p></li></ul>
-                    </li>
-                    <br>
-                    <li>Visitor & Attendance Management System
-                        <ul>
-                            <li>A digital entry and exit log for a tech training hub (PIIT). Visitors sign in through an n8n form. Each visitor gets a unique Log ID and a branded confirmation email, and their visit is stored in Google Sheets. To sign out, visitors give their name and Log ID. The workflow checks these against the sheet, blocks duplicate sign-outs, and records the exit time in Lagos time. It also builds daily HTML reports for the Administration, Training and Security teams, including a list of visitors who haven’t signed out.<p><b>Stack:</b> n8n Forms, Google Sheets, JavaScript, Gmail, Slack</p></li>
-                        </ul>
-                    </li>
-                    <br>
-                    
-                    
-                </ol>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form>
-                    <label for="emial">Email</label>
-                    <input type="email" id="email" 
-                    name="email" required/>
-                    <button type="submit">Say Hello</button>
-                    <a href="https://wa.me/2349076420270?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank">
-  <button type="button" style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
-    Chat on WhatsApp
-  </button>
-</a>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>AI Automation & Integration</h3>
+                    <p>Leveraging intelligent automation to streamline complex workflows, reduce repetitive tasks, and scale efficiency using AI tools, API connections, and process automation.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Website & Landing Page Development</h3>
+                    <p>Designing and building responsive, high-converting landing pages that blend clean frontend code with strategic user journeys.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Translating wireframes into clean, semantic, and responsive web pages focused on accessibility and modern layout techniques.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Technical Problem Solving</h3>
+                    <p>Combining analytical thinking with programmatic logic to debug issues and bridge automated backend systems with client-facing interfaces.</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>VS Code & Workflow Optimization</h3>
+                    <p>Utilizing VS Code extensions, automated linting, live servers, and keyboard shortcuts to maintain a fast, error-free workflow.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                
+                <article class="portfolio-card">
+                    <figure class="portfolio-media">
+                        <img src="./the_poultry_farm_intelligence.png" alt="The Poultry Farm Intelligence Interface">
+                    </figure>
+                    <div class="portfolio-content">
+                        <h3>1. The Poultry Farm Intelligence</h3>
+                        <p>An AI sales analyst running daily at 7 PM to pull sales data, calculate metrics, and output executive summary emails using GPT-4o grounded strictly in actual metrics.</p>
+                        <p class="tech-stack"><strong>Stack:</strong> n8n, Google Sheets, JavaScript, OpenAI GPT-4o, Gmail</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <figure class="portfolio-media">
+                        <img src="./lead-routing_sales_process.png" alt="Lead Routing & Sales Process Workflow">
+                    </figure>
+                    <div class="portfolio-content">
+                        <h3>2. Lead Routing & Sales Process</h3>
+                        <p>A webhook lead-intake system that logs incoming prospects in Google Sheets and instantly routes alerts to the appropriate specialized Slack teams.</p>
+                        <p class="tech-stack"><strong>Stack:</strong> n8n, Webhooks, Google Sheets, Slack</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <figure class="portfolio-media">
+                        <img src="./customer_support_request_process.png" alt="Customer Support Request Process Workflow">
+                    </figure>
+                    <div class="portfolio-content">
+                        <h3>3. Customer Support Request Process</h3>
+                        <p>Automated ticket router sorting customer requests from webhooks directly to dedicated Slack channels for faster response times.</p>
+                        <p class="tech-stack"><strong>Stack:</strong> n8n, Webhooks, Google Sheets, Slack</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-content">
+                        <h3>4. PIIT Week 1 Project - Personal Profile</h3>
+                        <p>A landing page blending clean frontend code with strategic user pathways to capture leads and guide visitor interactions.</p>
+                        <p class="tech-stack"><strong>Stack:</strong> VS Code, HTML5, CSS, Favicon, GitHub</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-content">
+                        <h3>5. Visitor & Attendance Management System</h3>
+                        <p>Digital check-in system managing visitor entries/exits, duplicate sign-out verification, automated daily HTML reports, and Slack alerts.</p>
+                        <p class="tech-stack"><strong>Stack:</strong> n8n Forms, Google Sheets, JavaScript, Gmail, Slack</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-card">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Say Hello</button>
                 </form>
-            </section>
-        </main>
 
-        <footer>
-            <p>&copy; 2026 Kayode Beulah</p>
-        </footer>
-    </body>
+                <div class="contact-divider">OR</div>
+
+                <a href="https://wa.me/2349076420270?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="btn btn-whatsapp">
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kayode Beulah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
